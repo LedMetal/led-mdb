@@ -1,4 +1,4 @@
-export interface IApiMovie {
+export interface IMovieDetails {
   actors: string[];
   director: string;
   genres: string[];
