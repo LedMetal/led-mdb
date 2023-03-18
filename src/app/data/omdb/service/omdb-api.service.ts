@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
-import { IMovieDetails } from '../schema/movie-details';
+import { IMovieDetails, JsonMovieDetails } from '../schema/movie-details';
 
 @Injectable({
   providedIn: 'root',
@@ -11,11 +11,11 @@ export class OmdbApiService {
 
   public get(url: string): Observable<IMovieDetails> {
     return this.http
-      .get(url)
+      .get<JsonMovieDetails>(url)
       .pipe(map((movie) => this.mapJsonApiMovieToIApiMovie(movie)));
   }
 
-  mapJsonApiMovieToIApiMovie(movie: any): IMovieDetails {
+  mapJsonApiMovieToIApiMovie(movie: JsonMovieDetails): IMovieDetails {
     return {
       actors: movie.Actors.split(', '),
       director: movie.Director,

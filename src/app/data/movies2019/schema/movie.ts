@@ -8,7 +8,7 @@ export interface IMovie {
   method: IMethod;
 }
 
-export interface JSONMovie {
+export interface JsonMovie {
   date: string;
   title: string;
   mani: string;

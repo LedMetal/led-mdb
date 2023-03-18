@@ -1,24 +1,22 @@
 import { Injectable } from '@angular/core';
 import { Observable, Subscriber } from 'rxjs';
 import { IMethod } from '../../movies2019/schema/method';
-import { IMovie, JSONMovie } from '../../movies2019/schema/movie';
+import { IMovie, JsonMovie } from '../../movies2019/schema/movie';
 import moviesData from './json/movies_data.json';
 
 @Injectable({
   providedIn: 'root',
 })
 export class MoviesApiService {
-  constructor() {}
-
   getAllMovies(): Observable<IMovie[]> {
     return new Observable((observer: Subscriber<IMovie[]>) => {
       observer.next(
-        moviesData.map((movie: JSONMovie) => this.mapJsonNMovieToIMovie(movie))
+        moviesData.map((movie: JsonMovie) => this.mapJsonNMovieToIMovie(movie))
       );
     });
   }
 
-  mapJsonNMovieToIMovie(jsonMovie: JSONMovie): IMovie {
+  mapJsonNMovieToIMovie(jsonMovie: JsonMovie): IMovie {
     return {
       date: new Date(`${jsonMovie.date}, 2019`),
       title: jsonMovie.title,
