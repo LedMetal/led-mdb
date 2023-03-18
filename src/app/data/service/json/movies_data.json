@@ -1,807 +1,807 @@
 [
   {
-    "Date": "Jan 1",
-    "Movie": "About Last Night",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "Jan 1",
+    "title": "About Last Night",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "Jan 1",
-    "Movie": "A Quiet Place",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Torrent"
+    "date": "Jan 1",
+    "title": "A Quiet Place",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Torrent"
   },
   {
-    "Date": "Jan 2",
-    "Movie": "Bird Box",
-    "Mani": "No",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "Jan 2",
+    "title": "Bird Box",
+    "mani": "No",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "Jan 21",
-    "Movie": "Pineapple Express",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Netflix"
+    "date": "Jan 21",
+    "title": "Pineapple Express",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Netflix"
   },
   {
-    "Date": "Jan 21",
-    "Movie": "Zack and Miri Make a Porno",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Netflix"
+    "date": "Jan 21",
+    "title": "Zack and Miri Make a Porno",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Netflix"
   },
   {
-    "Date": "Jan 21",
-    "Movie": "The Matrix",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Netflix"
+    "date": "Jan 21",
+    "title": "The Matrix",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Netflix"
   },
   {
-    "Date": "Jan 26",
-    "Movie": "Talladega Nights: The Ballad of Ricky Bobby",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Netflix"
+    "date": "Jan 26",
+    "title": "Talladega Nights: The Ballad of Ricky Bobby",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Netflix"
   },
   {
-    "Date": "Jan 26",
-    "Movie": "The Other Guys",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Netflix"
+    "date": "Jan 26",
+    "title": "The Other Guys",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Netflix"
   },
   {
-    "Date": "Jan 27",
-    "Movie": "The Big Sick",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Amazon"
+    "date": "Jan 27",
+    "title": "The Big Sick",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Amazon"
   },
   {
-    "Date": "Jan 30",
-    "Movie": "Easy A",
-    "Mani": "No",
-    "Nida": "Yes",
-    "Method": "Amazon"
+    "date": "Jan 30",
+    "title": "Easy A",
+    "mani": "No",
+    "nida": "Yes",
+    "method": "Amazon"
   },
   {
-    "Date": "Jan 30",
-    "Movie": "Leap Year",
-    "Mani": "No",
-    "Nida": "Yes",
-    "Method": "Amazon"
+    "date": "Jan 30",
+    "title": "Leap Year",
+    "mani": "No",
+    "nida": "Yes",
+    "method": "Amazon"
   },
   {
-    "Date": "Jan 30",
-    "Movie": "Lady Bird",
-    "Mani": "No",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "Jan 30",
+    "title": "Lady Bird",
+    "mani": "No",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "Feb 1",
-    "Movie": "Men in Black",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Amazon"
+    "date": "Feb 1",
+    "title": "Men in Black",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Amazon"
   },
   {
-    "Date": "Feb 1",
-    "Movie": "Men in Black II",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Amazon"
+    "date": "Feb 1",
+    "title": "Men in Black II",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Amazon"
   },
   {
-    "Date": "Feb 1",
-    "Movie": "Men in Black 3",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Amazon"
+    "date": "Feb 1",
+    "title": "Men in Black 3",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Amazon"
   },
   {
-    "Date": "Feb 1",
-    "Movie": "Bad Boys II",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Amazon"
+    "date": "Feb 1",
+    "title": "Bad Boys II",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Amazon"
   },
   {
-    "Date": "Feb 2",
-    "Movie": "Zombieland",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Amazon"
+    "date": "Feb 2",
+    "title": "Zombieland",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Amazon"
   },
   {
-    "Date": "Feb 2",
-    "Movie": "Zodiac",
-    "Mani": "No",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "Feb 2",
+    "title": "Zodiac",
+    "mani": "No",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "Feb 10",
-    "Movie": "Unbreakable",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Torrent"
+    "date": "Feb 10",
+    "title": "Unbreakable",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Torrent"
   },
   {
-    "Date": "Feb 12",
-    "Movie": "Black Mirror: Bandersnatch",
-    "Mani": "No",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "Feb 12",
+    "title": "Black Mirror: Bandersnatch",
+    "mani": "No",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "Feb 13",
-    "Movie": "Fist Fight",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "Feb 13",
+    "title": "Fist Fight",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "Feb 16",
-    "Movie": "Race",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "Feb 16",
+    "title": "Race",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "Feb 22",
-    "Movie": "Split",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Torrent"
+    "date": "Feb 22",
+    "title": "Split",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Torrent"
   },
   {
-    "Date": "Feb 24",
-    "Movie": "Night School",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Torrent"
+    "date": "Feb 24",
+    "title": "Night School",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Torrent"
   },
   {
-    "Date": "Feb 25",
-    "Movie": "CHIPS",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "Feb 25",
+    "title": "CHIPS",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "Mar 1",
-    "Movie": "A Star Is Born",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Torrent"
+    "date": "Mar 1",
+    "title": "A Star Is Born",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Torrent"
   },
   {
-    "Date": "Mar 3",
-    "Movie": "Space Jam",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "Mar 3",
+    "title": "Space Jam",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "Mar 13",
-    "Movie": "Glass",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Cinema"
+    "date": "Mar 13",
+    "title": "Glass",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Cinema"
   },
   {
-    "Date": "Mar 17",
-    "Movie": "Wanderlust",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "Mar 17",
+    "title": "Wanderlust",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "Mar 23",
-    "Movie": "BlacKkKlansman",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Cineplex Rental"
+    "date": "Mar 23",
+    "title": "BlacKkKlansman",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Cineplex Rental"
   },
   {
-    "Date": "Mar 28",
-    "Movie": "The Change-Up",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "Mar 28",
+    "title": "The Change-Up",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "Mar 30",
-    "Movie": "Saving Silverman",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "Mar 30",
+    "title": "Saving Silverman",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "Mar 31",
-    "Movie": "You, Me and Dupree",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "Mar 31",
+    "title": "You, Me and Dupree",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "April 2",
-    "Movie": "Precious",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "April 2",
+    "title": "Precious",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "April 16",
-    "Movie": "Us",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Cinema"
+    "date": "April 16",
+    "title": "Us",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Cinema"
   },
   {
-    "Date": "April 22",
-    "Movie": "This is the End",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Netflix"
+    "date": "April 22",
+    "title": "This is the End",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Netflix"
   },
   {
-    "Date": "April 22",
-    "Movie": "Crazy Rich Asians",
-    "Mani": "No",
-    "Nida": "Yes",
-    "Method": "Airplane"
+    "date": "April 22",
+    "title": "Crazy Rich Asians",
+    "mani": "No",
+    "nida": "Yes",
+    "method": "Airplane"
   },
   {
-    "Date": "May 2",
-    "Movie": "The Clapper",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "May 2",
+    "title": "The Clapper",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "May 7",
-    "Movie": "The Do-Over",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "May 7",
+    "title": "The Do-Over",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "May 9",
-    "Movie": "Knock Down The House",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "May 9",
+    "title": "Knock Down The House",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "May 19",
-    "Movie": "Perfect Bid",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "May 19",
+    "title": "Perfect Bid",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "May 21",
-    "Movie": "Extremely Wicked Shockingly Evil and Vile",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "May 21",
+    "title": "Extremely Wicked Shockingly Evil and Vile",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "May 29",
-    "Movie": "Wine Country",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "May 29",
+    "title": "Wine Country",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "June 12",
-    "Movie": "Aladdin",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Cinema"
+    "date": "June 12",
+    "title": "Aladdin",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Cinema"
   },
   {
-    "Date": "June 14",
-    "Movie": "Hum Aapke Hain Koun",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "June 14",
+    "title": "Hum Aapke Hain Koun",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "June 16",
-    "Movie": "Murder Mystery",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "June 16",
+    "title": "Murder Mystery",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "June 29",
-    "Movie": "Aloha",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "June 29",
+    "title": "Aloha",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "June 30",
-    "Movie": "Identity Thief",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "June 30",
+    "title": "Identity Thief",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "July 1",
-    "Movie": "The Internship",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Torrent"
+    "date": "July 1",
+    "title": "The Internship",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Torrent"
   },
   {
-    "Date": "July 1",
-    "Movie": "The Social Network",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "July 1",
+    "title": "The Social Network",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "July 4",
-    "Movie": "Couples Retreat",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "July 4",
+    "title": "Couples Retreat",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "July 6",
-    "Movie": "Wreck-It Ralph 2: Ralph Breaks the Internet",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Netflix"
+    "date": "July 6",
+    "title": "Wreck-It Ralph 2: Ralph Breaks the Internet",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Netflix"
   },
   {
-    "Date": "July 7",
-    "Movie": "Harry Potter and the Philosopher's Stone",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Torrent"
+    "date": "July 7",
+    "title": "Harry Potter and the Philosopher's Stone",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Torrent"
   },
   {
-    "Date": "July 7",
-    "Movie": "Harry Potter and the Chamber of Secrets",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Torrent"
+    "date": "July 7",
+    "title": "Harry Potter and the Chamber of Secrets",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Torrent"
   },
   {
-    "Date": "July 8",
-    "Movie": "Harry Potter and the Philosopher's Stone",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Torrent"
+    "date": "July 8",
+    "title": "Harry Potter and the Philosopher's Stone",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Torrent"
   },
   {
-    "Date": "July 9",
-    "Movie": "Harry Potter and the Chamber of Secrets",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Torrent"
+    "date": "July 9",
+    "title": "Harry Potter and the Chamber of Secrets",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Torrent"
   },
   {
-    "Date": "July 13",
-    "Movie": "Harry Potter and the Prisoner of Azkaban",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Torrent"
+    "date": "July 13",
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Torrent"
   },
   {
-    "Date": "July 14",
-    "Movie": "Neighbours",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Stream"
+    "date": "July 14",
+    "title": "Neighbours",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Stream"
   },
   {
-    "Date": "July 14",
-    "Movie": "Happy Gilmore",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Netflix"
+    "date": "July 14",
+    "title": "Happy Gilmore",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Netflix"
   },
   {
-    "Date": "July 28",
-    "Movie": "Hall Pass",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "July 28",
+    "title": "Hall Pass",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "August 9",
-    "Movie": "Neighbours 2: Sorority Rising",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "August 9",
+    "title": "Neighbours 2: Sorority Rising",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "August 10",
-    "Movie": "The House",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "August 10",
+    "title": "The House",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "August 11",
-    "Movie": "Once Upon a Time ... in Hollywood",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Cinema"
+    "date": "August 11",
+    "title": "Once Upon a Time ... in Hollywood",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Cinema"
   },
   {
-    "Date": "August 11",
-    "Movie": "The Whole Nine Yards",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "August 11",
+    "title": "The Whole Nine Yards",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "August 12",
-    "Movie": "Role Models",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "August 12",
+    "title": "Role Models",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "August 15",
-    "Movie": "Friday",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Torrent"
+    "date": "August 15",
+    "title": "Friday",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Torrent"
   },
   {
-    "Date": "August 18",
-    "Movie": "Mean Girls",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "August 18",
+    "title": "Mean Girls",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "August 21",
-    "Movie": "Horrible Bosses",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "August 21",
+    "title": "Horrible Bosses",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "August 30",
-    "Movie": "Eurotrip",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Tubi"
+    "date": "August 30",
+    "title": "Eurotrip",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Tubi"
   },
   {
-    "Date": "August 30",
-    "Movie": "An American Crime",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Tubi"
+    "date": "August 30",
+    "title": "An American Crime",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Tubi"
   },
   {
-    "Date": "August 31",
-    "Movie": "Always Be My Maybe",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "August 31",
+    "title": "Always Be My Maybe",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "September 2",
-    "Movie": "Young Adult",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Tubi"
+    "date": "September 2",
+    "title": "Young Adult",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Tubi"
   },
   {
-    "Date": "September 2",
-    "Movie": "Election",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Tubi"
+    "date": "September 2",
+    "title": "Election",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Tubi"
   },
   {
-    "Date": "September 2",
-    "Movie": "Law Abiding Citizen",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "September 2",
+    "title": "Law Abiding Citizen",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "September 6",
-    "Movie": "Spider-Man: Far From Home",
-    "Mani": "No",
-    "Nida": "Yes",
-    "Method": "Cinema"
+    "date": "September 6",
+    "title": "Spider-Man: Far From Home",
+    "mani": "No",
+    "nida": "Yes",
+    "method": "Cinema"
   },
   {
-    "Date": "September 26",
-    "Movie": "Lion King",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Cinema"
+    "date": "September 26",
+    "title": "Lion King",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Cinema"
   },
   {
-    "Date": "October 11",
-    "Movie": "El Camino: A Breaking Bad Movie",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "October 11",
+    "title": "El Camino: A Breaking Bad Movie",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "October 12",
-    "Movie": "Bad Moms",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "October 12",
+    "title": "Bad Moms",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "October 13",
-    "Movie": "What Men Want",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "October 13",
+    "title": "What Men Want",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "October 14",
-    "Movie": "PK",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "October 14",
+    "title": "PK",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "October 14",
-    "Movie": "Fractured",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "October 14",
+    "title": "Fractured",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "October 14",
-    "Movie": "John Q",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Stream"
+    "date": "October 14",
+    "title": "John Q",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Stream"
   },
   {
-    "Date": "October 18",
-    "Movie": "Joker",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Cinema"
+    "date": "October 18",
+    "title": "Joker",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Cinema"
   },
   {
-    "Date": "October 20",
-    "Movie": "I, Tonya",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "October 20",
+    "title": "I, Tonya",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "November 23",
-    "Movie": "Second Act",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "November 23",
+    "title": "Second Act",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "November 24",
-    "Movie": "Father Figures",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "November 24",
+    "title": "Father Figures",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "November 24",
-    "Movie": "La La Land",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "November 24",
+    "title": "La La Land",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "November 25",
-    "Movie": "Anchorman: The Legend of Ron Burgundy",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "November 25",
+    "title": "Anchorman: The Legend of Ron Burgundy",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "November 27",
-    "Movie": "I Love You, Man",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Tubi"
+    "date": "November 27",
+    "title": "I Love You, Man",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Tubi"
   },
   {
-    "Date": "December 5",
-    "Movie": "Fanaa",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Torrent"
+    "date": "December 5",
+    "title": "Fanaa",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Torrent"
   },
   {
-    "Date": "December 5",
-    "Movie": "The Terminal",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "December 5",
+    "title": "The Terminal",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "December 6",
-    "Movie": "Doctor Sleep",
-    "Mani": "No",
-    "Nida": "Yes",
-    "Method": "Cinema"
+    "date": "December 6",
+    "title": "Doctor Sleep",
+    "mani": "No",
+    "nida": "Yes",
+    "method": "Cinema"
   },
   {
-    "Date": "December 7",
-    "Movie": "School of Rock",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Tubi"
+    "date": "December 7",
+    "title": "School of Rock",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Tubi"
   },
   {
-    "Date": "December 8",
-    "Movie": "Grown Ups",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "December 8",
+    "title": "Grown Ups",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "December 8",
-    "Movie": "Grown Ups 2",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "December 8",
+    "title": "Grown Ups 2",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "December 8",
-    "Movie": "Titanic",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "December 8",
+    "title": "Titanic",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "December 13",
-    "Movie": "Bohemian Rhapsody",
-    "Mani": "No",
-    "Nida": "Yes",
-    "Method": "Airplane"
+    "date": "December 13",
+    "title": "Bohemian Rhapsody",
+    "mani": "No",
+    "nida": "Yes",
+    "method": "Airplane"
   },
   {
-    "Date": "December15",
-    "Movie": "Shaft",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Airplane"
+    "date": "December15",
+    "title": "Shaft",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Airplane"
   },
   {
-    "Date": "December 15",
-    "Movie": "Stuber",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Airplane"
+    "date": "December 15",
+    "title": "Stuber",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Airplane"
   },
   {
-    "Date": "December 25",
-    "Movie": "Home Alone",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Torrent"
+    "date": "December 25",
+    "title": "Home Alone",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Torrent"
   },
   {
-    "Date": "December 26",
-    "Movie": "Home Alone 2: Lost in New York",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Torrent"
+    "date": "December 26",
+    "title": "Home Alone 2: Lost in New York",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Torrent"
   },
   {
-    "Date": "December 26",
-    "Movie": "Daddy's Home 2",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "December 26",
+    "title": "Daddy's Home 2",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "December 26",
-    "Movie": "How to Lose a Guy in 10 Days",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "December 26",
+    "title": "How to Lose a Guy in 10 Days",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "December 27",
-    "Movie": "Lord of War",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Tubi"
+    "date": "December 27",
+    "title": "Lord of War",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Tubi"
   },
   {
-    "Date": "December 27",
-    "Movie": "The Da Vinci Code",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "December 27",
+    "title": "The Da Vinci Code",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "December 27",
-    "Movie": "New Year's Eve",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "December 27",
+    "title": "New Year's Eve",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "December 28",
-    "Movie": "Justice League",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Netflix"
+    "date": "December 28",
+    "title": "Justice League",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Netflix"
   },
   {
-    "Date": "December 28",
-    "Movie": "The Master",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Stream"
+    "date": "December 28",
+    "title": "The Master",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Stream"
   },
   {
-    "Date": "December 29",
-    "Movie": "He's Just Not That into You",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "December 29",
+    "title": "He's Just Not That into You",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "December 29",
-    "Movie": "Stuber",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Stream"
+    "date": "December 29",
+    "title": "Stuber",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Stream"
   },
   {
-    "Date": "December 29",
-    "Movie": "Marriage Story",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "December 29",
+    "title": "Marriage Story",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   },
   {
-    "Date": "December 29",
-    "Movie": "Gladiator",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Netflix"
+    "date": "December 29",
+    "title": "Gladiator",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Netflix"
   },
   {
-    "Date": "December 29",
-    "Movie": "Company",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Netflix"
+    "date": "December 29",
+    "title": "Company",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Netflix"
   },
   {
-    "Date": "December 30",
-    "Movie": "Dil Chahta Hai",
-    "Mani": "Yes",
-    "Nida": "No",
-    "Method": "Netflix"
+    "date": "December 30",
+    "title": "Dil Chahta Hai",
+    "mani": "Yes",
+    "nida": "No",
+    "method": "Netflix"
   },
   {
-    "Date": "December 30",
-    "Movie": "Just Go With It",
-    "Mani": "Yes",
-    "Nida": "Yes",
-    "Method": "Netflix"
+    "date": "December 30",
+    "title": "Just Go With It",
+    "mani": "Yes",
+    "nida": "Yes",
+    "method": "Netflix"
   }
 ]
