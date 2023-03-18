@@ -1,4 +1,4 @@
-export enum Method {
+export enum IMethod {
   Cinema,
   TV,
   Netflix,

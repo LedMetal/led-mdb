@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, Subscriber } from 'rxjs';
-import { Method } from '../schema/method';
-import { IMovie, JSONMovie } from '../schema/movie';
+import { IMethod } from '../../movies2019/schema/method';
+import { IMovie, JSONMovie } from '../../movies2019/schema/movie';
 import moviesData from './json/movies_data.json';
 
 @Injectable({
@@ -10,15 +10,15 @@ import moviesData from './json/movies_data.json';
 export class MoviesApiService {
   constructor() {}
 
-  getAll(): Observable<IMovie[]> {
+  getAllMovies(): Observable<IMovie[]> {
     return new Observable((observer: Subscriber<IMovie[]>) => {
       observer.next(
-        moviesData.map((movie: JSONMovie) => this.mapJSONMovieToIMovie(movie))
+        moviesData.map((movie: JSONMovie) => this.mapJsonNMovieToIMovie(movie))
       );
     });
   }
 
-  mapJSONMovieToIMovie(jsonMovie: JSONMovie): IMovie {
+  mapJsonNMovieToIMovie(jsonMovie: JSONMovie): IMovie {
     return {
       date: new Date(`${jsonMovie.date}, 2019`),
       title: jsonMovie.title,
@@ -28,32 +28,32 @@ export class MoviesApiService {
     };
   }
 
-  setMovieMethod(method: string): Method {
+  setMovieMethod(method: string): IMethod {
     switch (method) {
       case 'Cinema':
-        return Method.Cinema;
+        return IMethod.Cinema;
       case 'TV':
-        return Method.TV;
+        return IMethod.TV;
       case 'Netflix':
-        return Method.Netflix;
+        return IMethod.Netflix;
       case 'YouTube':
-        return Method.YouTube;
+        return IMethod.YouTube;
       case 'Stream':
-        return Method.Stream;
+        return IMethod.Stream;
       case 'Torrent':
-        return Method.Torrent;
+        return IMethod.Torrent;
       case 'DVD/Blu-Ray':
-        return Method['DVD/Blu-Ray'];
+        return IMethod['DVD/Blu-Ray'];
       case 'Amazon':
-        return Method.Amazon;
+        return IMethod.Amazon;
       case 'Cineplex Rental':
-        return Method['Cineplex Rental'];
+        return IMethod['Cineplex Rental'];
       case 'Airplane':
-        return Method.Airplane;
+        return IMethod.Airplane;
       case 'Tubi':
-        return Method.Tubi;
+        return IMethod.Tubi;
       default:
-        return Method.Other;
+        return IMethod.Other;
     }
   }
 }

@@ -1,11 +1,11 @@
-import { Method } from './method';
+import { IMethod } from './method';
 
 export interface IMovie {
   date: Date;
   title: string;
   mani: boolean;
   nida: boolean;
-  method: Method;
+  method: IMethod;
 }
 
 export interface JSONMovie {
