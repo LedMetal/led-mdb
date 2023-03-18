@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { MoviesApiService } from '../data/service/movies-api.service';
+import { IMovie } from '../data/movies2019/schema/movie';
+import { MoviesApiService } from '../data/movies2019/service/movies-api.service';
+import { OmdbApiService } from '../data/omdb/service/omdb-api.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,18 @@ import { MoviesApiService } from '../data/service/movies-api.service';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  constructor(private moviesApi: MoviesApiService) {}
+  constructor(
+    private moviesApi: MoviesApiService,
+    private omdbApi: OmdbApiService
+  ) {}
 
   ngOnInit(): void {
-    this.moviesApi.getAll().subscribe((data) => console.log('data: ', data));
+    this.moviesApi
+      .getAllMovies()
+      .subscribe((data: IMovie[]) => console.log('data: ', data));
+
+    this.omdbApi
+      .get('http://www.omdbapi.com/?i=tt3896198&apikey=88e57f3b')
+      .subscribe((data) => console.log('data: ', data));
   }
 }
