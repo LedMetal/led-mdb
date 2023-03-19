@@ -1,0 +1,28 @@
+<div class="textbox">
+  <div
+    *ngIf="placeholder"
+    class="placeholder-text text-truncate"
+    [ngClass]="{ typing: typing }"
+  >
+    {{ placeholder }}
+  </div>
+
+  <input
+    class="input-field"
+    [ngClass]="{
+      'no-placeholder': !placeholder,
+      typing: typing,
+      'is-password': password && typing
+    }"
+    [ngModel]="inputText"
+    (ngModelChange)="handleInputChange($event)"
+    [type]="password && !showPassword ? 'password' : 'text'"
+  />
+
+  <fa-icon
+    *ngIf="password && typing"
+    class="password-eye-icon"
+    [icon]="showPassword ? faEye : faEyeSlash"
+    (click)="handleEyeClick()"
+  ></fa-icon>
+</div>
