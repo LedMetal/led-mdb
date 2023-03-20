@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -9,16 +9,19 @@ import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 export class TextboxComponent {
   @Input() placeholder = '';
   @Input() password = false;
+  @Output() sendInput = new EventEmitter<string>();
 
   typing = false;
   inputText = '';
+  showPassword = false;
   faEye = faEye;
   faEyeSlash = faEyeSlash;
-  showPassword = false;
 
   handleInputChange(value: string) {
     this.inputText = value;
     this.typing = this.inputText !== '';
+
+    this.sendInput.emit(this.inputText);
   }
 
   handleEyeClick(): void {

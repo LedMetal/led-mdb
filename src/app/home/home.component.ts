@@ -19,8 +19,8 @@ export class HomeComponent implements OnInit {
       .getAllMovies()
       .subscribe((data: IMovie[]) => console.log('data: ', data));
 
-    this.omdbApi
-      .get('http://www.omdbapi.com/?i=tt3896198&apikey=88e57f3b')
-      .subscribe((data) => console.log('data: ', data));
+    // this.omdbApi
+    //   .get('http://www.omdbapi.com/?i=tt3896198&apikey=88e57f3b')
+    //   .subscribe((data) => console.log('data: ', data));
   }
 }
