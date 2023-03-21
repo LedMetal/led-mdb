@@ -1,10 +1,8 @@
-.textbox {
+.drop-down {
   background-color: #fff;
   border-radius: 0.375rem;
-  display: flex;
   height: 38px;
   position: relative;
-  user-select: none;
   width: 100%;
 
   .placeholder-text {
@@ -17,40 +15,36 @@
     transition: all 0.25s ease-in-out;
     width: calc(100% - 14px);
 
-    &.typing {
+    &.selection-made {
       font-size: 8px;
       left: 13px;
       top: 2px;
     }
   }
 
-  .input-field {
-    background-color: unset;
+  .drop-down-select {
+    appearance: none;
+    background-color: transparent;
     border: 1px solid #000;
     border-radius: 0.375rem;
-    padding: 6px 11px;
+    height: 100%;
+    padding: 0 11px;
+    position: relative;
     width: 100%;
-    z-index: 0;
+    z-index: 1;
     transition: all 0.25s ease-in-out;
-
-    &.typing {
-      &:not(.no-placeholder) {
-        padding: 8px 11px 0;
-      }
-    }
 
     &:focus {
       border-color: #006eff;
       outline: 3px solid #006eff33;
     }
 
-    &.is-password {
-      padding-right: 35px !important;
+    &.selection-made {
+      padding: 8px 11px 0;
     }
   }
 
-  .password-eye-icon {
-    cursor: pointer;
+  .drop-down-caret {
     position: absolute;
     right: 12px;
     top: 7px;

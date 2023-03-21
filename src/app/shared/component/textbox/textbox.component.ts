@@ -9,7 +9,8 @@ import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 export class TextboxComponent {
   @Input() placeholder = '';
   @Input() password = false;
-  @Output() sendInput = new EventEmitter<string>();
+  @Input() highlightColor = '#006eff';
+  @Output() emitInput = new EventEmitter<string>();
 
   typing = false;
   inputText = '';
@@ -21,7 +22,7 @@ export class TextboxComponent {
     this.inputText = value;
     this.typing = this.inputText !== '';
 
-    this.sendInput.emit(this.inputText);
+    this.emitInput.emit(this.inputText);
   }
 
   handleEyeClick(): void {

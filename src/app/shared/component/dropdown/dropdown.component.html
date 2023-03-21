@@ -1,0 +1,25 @@
+<div class="drop-down">
+  <div
+    *ngIf="placeholder"
+    class="placeholder-text text-truncate"
+    [ngClass]="{ 'selection-made': selectionMade }"
+  >
+    {{ placeholder }}
+  </div>
+
+  <select
+    class="drop-down-select"
+    [ngClass]="{ 'selection-made': selectionMade }"
+    name="cars"
+    id="cars"
+    (click)="handleDropDownClick($any($event.target).value)"
+    (keyup)="handleDropDownClick($any($event.target).value)"
+  >
+    <option value=""></option>
+    <option *ngFor="let option of options" [value]="option">
+      {{ option }}
+    </option>
+  </select>
+
+  <fa-icon class="drop-down-caret" [icon]="faCaretDown"></fa-icon>
+</div>
