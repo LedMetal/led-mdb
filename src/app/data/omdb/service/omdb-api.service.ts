@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
+import { Constants } from 'src/app/shared/constants';
+import { IMovie } from '../../movies2019/schema/movie';
 import { IMovieDetails, JsonMovieDetails } from '../schema/movie-details';
 
 @Injectable({
@@ -9,19 +11,26 @@ import { IMovieDetails, JsonMovieDetails } from '../schema/movie-details';
 export class OmdbApiService {
   constructor(private http: HttpClient) {}
 
-  public get(url: string): Observable<IMovieDetails> {
+  public getMovie(iMovie: IMovie): Observable<IMovieDetails> {
+    const url = `${Constants.URL_PREFIX}&t=${iMovie.title}&type=movie`;
+
     return this.http
       .get<JsonMovieDetails>(url)
-      .pipe(map((movie) => this.mapJsonApiMovieToIApiMovie(movie)));
+      .pipe(map((movie) => this.mapJsonApiMovieToIMovieDetails(movie, iMovie)));
   }
 
-  mapJsonApiMovieToIApiMovie(movie: JsonMovieDetails): IMovieDetails {
+  mapJsonApiMovieToIMovieDetails(
+    movie: JsonMovieDetails,
+    iMovie: IMovie
+  ): IMovieDetails {
     return {
       actors: movie.Actors.split(', '),
       director: movie.Director,
       genres: movie.Genre.split(', '),
       language: movie.Language,
+      mani: iMovie.mani,
       metascore: parseInt(movie.Metascore),
+      nida: iMovie.nida,
       plot: movie.Plot,
       poster: movie.Poster,
       rated: movie.Rated,
@@ -29,6 +38,8 @@ export class OmdbApiService {
       released: new Date(movie.Released),
       runtime: movie.Runtime,
       title: movie.Title,
+      watchDate: iMovie.date,
+      watchMethod: iMovie.method,
       writers: movie.Writer.split(', '),
       year: parseInt(movie.Year),
     };
