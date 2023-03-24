@@ -7,7 +7,7 @@ import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./dropdown.component.scss'],
 })
 export class DropdownComponent {
-  @Input() options: string[] = ['Option 1', 'Option 2', 'Option 3'];
+  @Input() options = ['Option 1', 'Option 2', 'Option 3'];
   @Input() placeholder = 'Select one';
   @Output() emitValue = new EventEmitter<string>();
 
