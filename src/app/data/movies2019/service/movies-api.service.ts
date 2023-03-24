@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, Subscriber } from 'rxjs';
+import { filter } from 'rxjs/operators';
 import { IMethod } from '../../movies2019/schema/method';
 import { IMovie, JsonMovie } from '../../movies2019/schema/movie';
 import moviesData from './json/movies_data.json';
@@ -8,12 +9,18 @@ import moviesData from './json/movies_data.json';
   providedIn: 'root',
 })
 export class MoviesApiService {
-  getAllMovies(): Observable<IMovie[]> {
-    return new Observable((observer: Subscriber<IMovie[]>) => {
-      observer.next(
-        moviesData.map((movie: JsonMovie) => this.mapJsonNMovieToIMovie(movie))
-      );
+  getAllMovies(): Observable<IMovie> {
+    return new Observable((observer: Subscriber<IMovie>) => {
+      moviesData
+        .map((movie: JsonMovie) => this.mapJsonNMovieToIMovie(movie))
+        .forEach((movie: IMovie) => observer.next(movie));
     });
+  }
+
+  getMoviesByMonth(month: number): Observable<IMovie> {
+    return this.getAllMovies().pipe(
+      filter((movie: IMovie) => movie.date.getMonth() === month)
+    );
   }
 
   mapJsonNMovieToIMovie(jsonMovie: JsonMovie): IMovie {
