@@ -1,0 +1,14 @@
+.movie-card {
+  background-position: center;
+  background-size: 100%;
+  cursor: pointer;
+  filter: grayscale(1);
+  height: 370px;
+  transition: all 0.25s ease-in-out;
+  width: 250px;
+
+  &:hover {
+    background-size: 105%;
+    filter: grayscale(0);
+  }
+}

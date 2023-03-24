@@ -4,10 +4,11 @@ import { TextboxComponent } from './component/textbox/textbox.component';
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { DropdownComponent } from './component/dropdown/dropdown.component';
+import { MovieCardComponent } from './component/movie-card/movie-card.component';
 
 @NgModule({
-  declarations: [TextboxComponent, DropdownComponent],
+  declarations: [TextboxComponent, DropdownComponent, MovieCardComponent],
   imports: [CommonModule, FormsModule, FontAwesomeModule],
-  exports: [TextboxComponent, DropdownComponent],
+  exports: [TextboxComponent, DropdownComponent, MovieCardComponent],
 })
 export class SharedModule {}
