@@ -1,3 +1,4 @@
+import { IMethod } from '../../movies2019/schema/method';
 import { IRating } from './rating';
 
 export interface IMovieDetails {
@@ -5,7 +6,9 @@ export interface IMovieDetails {
   director: string;
   genres: string[];
   language: string;
+  mani: boolean;
   metascore: number;
+  nida: boolean;
   plot: string;
   poster: string;
   rated: string;
@@ -13,8 +16,52 @@ export interface IMovieDetails {
   released: Date;
   runtime: string;
   title: string;
+  watchDate: Date;
+  watchMethod: IMethod;
   writers: string[];
   year: number;
+}
+
+export class EmptyMovieDetails {
+  actors: string[];
+  director: string;
+  genres: string[];
+  language: string;
+  mani: boolean;
+  metascore: number;
+  nida: boolean;
+  plot: string;
+  poster: string;
+  rated: string;
+  ratings: IRating[];
+  released: Date;
+  runtime: string;
+  title: string;
+  watchDate: Date;
+  watchMethod: IMethod;
+  writers: string[];
+  year: number;
+
+  constructor() {
+    this.actors = [];
+    this.director = '';
+    this.genres = [];
+    this.language = '';
+    this.mani = false;
+    this.metascore = 0;
+    this.nida = false;
+    this.plot = '';
+    this.poster = '';
+    this.rated = '';
+    this.ratings = [];
+    this.released = new Date();
+    this.runtime = '';
+    this.title = '';
+    this.watchDate = new Date();
+    this.watchMethod = IMethod.Other;
+    this.writers = [];
+    this.year = 0;
+  }
 }
 
 export interface JsonMovieDetails {
