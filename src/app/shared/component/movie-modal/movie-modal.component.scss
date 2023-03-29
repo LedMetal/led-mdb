@@ -1,0 +1,13 @@
+.modal-header {
+  align-items: normal;
+  flex-direction: column;
+}
+
+.modal-body {
+  display: flex;
+  gap: 16px;
+
+  .movie-info {
+    width: 500px;
+  }
+}

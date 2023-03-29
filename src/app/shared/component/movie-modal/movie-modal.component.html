@@ -1,0 +1,19 @@
+<div class="modal-header">
+  <h2 class="movie-title">{{ movieDetails.title }}</h2>
+
+  <div class="movie-actors">
+    <span *ngFor="let actor of movieDetails.actors; let i = index">
+      {{ actor }}<span *ngIf="i !== movieDetails.actors.length - 1">, </span>
+    </span>
+  </div>
+</div>
+
+<div class="modal-body">
+  <div class="movie-poster">
+    <img [src]="movieDetails.poster" />
+  </div>
+
+  <div class="movie-info">
+    <span class="movie-plot">{{ movieDetails.plot }}</span>
+  </div>
+</div>
