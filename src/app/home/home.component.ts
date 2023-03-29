@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { map, tap } from 'rxjs';
 import { IMovie } from '../data/movies2019/schema/movie';
 import { MoviesApiService } from '../data/movies2019/service/movies-api.service';
 import { IMovieDetails } from '../data/omdb/schema/movie-details';
