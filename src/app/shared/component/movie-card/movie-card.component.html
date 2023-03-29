@@ -1,4 +1,7 @@
 <div
   class="movie-card"
   [ngStyle]="{ 'background-image': 'url(' + movieDetails.poster + ')' }"
-></div>
+  (click)="openModal()"
+>
+  <div class="title-bar">{{ movieDetails.title }}</div>
+</div>

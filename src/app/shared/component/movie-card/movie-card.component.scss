@@ -1,14 +1,34 @@
+@import "/src/styles/colors";
+
 .movie-card {
   background-position: center;
   background-size: 100%;
   cursor: pointer;
   filter: grayscale(1);
   height: 370px;
+  overflow: hidden;
   transition: all 0.25s ease-in-out;
   width: 250px;
 
   &:hover {
     background-size: 105%;
     filter: grayscale(0);
+
+    .title-bar {
+      top: 0;
+    }
+  }
+
+  .title-bar {
+    align-items: center;
+    background-color: $black-99;
+    color: $white;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    top: -50px;
+    transition: top 0.25s ease-in-out;
   }
 }
