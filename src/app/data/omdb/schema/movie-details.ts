@@ -3,8 +3,10 @@ import { IRating } from './rating';
 
 export interface IMovieDetails {
   actors: string[];
-  director: string;
+  awards: string;
+  director: string[];
   genres: string[];
+  imdbID: string;
   language: string;
   mani: boolean;
   metascore: number;
@@ -24,8 +26,10 @@ export interface IMovieDetails {
 
 export class EmptyMovieDetails {
   actors: string[];
-  director: string;
+  awards: string;
+  director: string[];
   genres: string[];
+  imdbID: string;
   language: string;
   mani: boolean;
   metascore: number;
@@ -44,8 +48,10 @@ export class EmptyMovieDetails {
 
   constructor() {
     this.actors = [];
-    this.director = '';
+    this.awards = '';
+    this.director = [];
     this.genres = [];
+    this.imdbID = '';
     this.language = '';
     this.mani = false;
     this.metascore = 0;
