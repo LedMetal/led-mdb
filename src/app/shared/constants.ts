@@ -17,3 +17,8 @@ export enum Month {
   'November',
   'December',
 }
+
+export interface IFilterInfo {
+  filterBy: string;
+  filterTerm: string;
+}

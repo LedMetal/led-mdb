@@ -4,7 +4,7 @@ import { IMovie } from '../data/movies2019/schema/movie';
 import { MoviesApiService } from '../data/movies2019/service/movies-api.service';
 import { IMovieDetails } from '../data/omdb/schema/movie-details';
 import { OmdbApiService } from '../data/omdb/service/omdb-api.service';
-import { Month } from '../shared/constants';
+import { IFilterInfo, Month } from '../shared/constants';
 
 @Component({
   selector: 'app-home',
@@ -43,13 +43,28 @@ export class HomeComponent implements OnInit {
       });
   }
 
-  filterByActor(actor: string): void {
+  filterDisplayMovies(filterInfo: IFilterInfo): void {
     this._displayMovies = [];
 
     this.moviesApi.getAllMovies().subscribe((movie: IMovie) => {
       this.omdbApi
         .getMovie(movie)
-        .pipe(filter((movie: IMovieDetails) => movie.actors.includes(actor)))
+        .pipe(
+          filter((movie: IMovieDetails) => {
+            switch (filterInfo.filterBy) {
+              case 'actors':
+                return movie.actors.includes(filterInfo.filterTerm);
+              case 'director':
+                return movie.director.includes(filterInfo.filterTerm);
+              case 'writers':
+                return movie.writers.includes(filterInfo.filterTerm);
+              case 'genres':
+                return movie.genres.includes(filterInfo.filterTerm);
+              default:
+                return false;
+            }
+          })
+        )
         .subscribe((movie: IMovieDetails) => this._displayMovies.push(movie));
     });
   }

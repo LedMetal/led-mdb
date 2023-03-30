@@ -81,7 +81,7 @@ export class MovieModalComponent {
     }
   }
 
-  selectActor(actor: string) {
-    this.activeModal.close(actor);
+  setFilter(filterBy: string, filterTerm: string): void {
+    this.activeModal.close({ filterBy: filterBy, filterTerm: filterTerm });
   }
 }

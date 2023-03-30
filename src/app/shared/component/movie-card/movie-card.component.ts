@@ -4,6 +4,7 @@ import {
   EmptyMovieDetails,
   IMovieDetails,
 } from 'src/app/data/omdb/schema/movie-details';
+import { IFilterInfo } from '../../constants';
 import { MovieModalComponent } from '../movie-modal/movie-modal.component';
 
 @Component({
@@ -13,7 +14,7 @@ import { MovieModalComponent } from '../movie-modal/movie-modal.component';
 })
 export class MovieCardComponent {
   @Input() movieDetails: IMovieDetails = new EmptyMovieDetails();
-  @Output() searchByActor: EventEmitter<string> = new EventEmitter();
+  @Output() searchByFilter: EventEmitter<IFilterInfo> = new EventEmitter();
 
   constructor(private modalService: NgbModal) {}
 
@@ -23,7 +24,7 @@ export class MovieCardComponent {
     });
     modalRef.componentInstance.movieDetails = this.movieDetails;
     modalRef.result
-      .then((actor: string) => this.searchByActor.emit(actor))
+      .then((filterInfo: IFilterInfo) => this.searchByFilter.emit(filterInfo))
       .catch(() => console.log());
   }
 }

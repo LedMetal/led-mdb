@@ -24,7 +24,7 @@
     <app-movie-card
       *ngFor="let movie of displayMovies"
       [movieDetails]="movie"
-      (searchByActor)="filterByActor($event)"
+      (searchByFilter)="filterDisplayMovies($event)"
     ></app-movie-card>
   </div>
 </div>

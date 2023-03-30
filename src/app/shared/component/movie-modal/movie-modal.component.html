@@ -10,6 +10,7 @@
       [ngStyle]="{
         'background-color': setGenreBgColor(genre)
       }"
+      (click)="setFilter('genres', genre)"
       >{{ genre }}</span
     >
   </div>
@@ -36,7 +37,11 @@
 
       <div class="actors-container">
         <div *ngFor="let actor of movieDetails.actors; let i = index">
-          <span class="actor" (click)="selectActor(actor)">{{ actor }}</span>
+          <span
+            class="selectable-filter"
+            (click)="setFilter('actors', actor)"
+            >{{ actor }}</span
+          >
 
           <span *ngIf="i !== movieDetails.actors.length - 1">,&nbsp;</span>
         </div>
@@ -50,7 +55,11 @@
 
       <div class="directors-container">
         <span *ngFor="let director of movieDetails.director; let i = index">
-          <span>{{ director }}</span>
+          <span
+            class="selectable-filter"
+            (click)="setFilter('director', director)"
+            >{{ director }}</span
+          >
 
           <span *ngIf="i !== movieDetails.director.length - 1">, </span>
         </span>
@@ -64,7 +73,11 @@
 
       <div class="writers-container">
         <span *ngFor="let writer of movieDetails.writers; let i = index">
-          <span>{{ writer }}</span>
+          <span
+            class="selectable-filter"
+            (click)="setFilter('writers', writer)"
+            >{{ writer }}</span
+          >
 
           <span *ngIf="i !== movieDetails.writers.length - 1">, </span>
         </span>

@@ -38,11 +38,20 @@
       border-radius: 5px;
       cursor: default;
       padding: 4px;
-      transition: all 0.25s ease-in-out;
+      transition: all 0.25s linear;
 
       &:hover {
         background-color: $grey;
         color: $white;
+      }
+
+      .selectable-filter {
+        cursor: pointer;
+
+        &:hover {
+          color: skyblue;
+          text-decoration: underline;
+        }
       }
     }
 
