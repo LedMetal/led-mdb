@@ -1,10 +1,17 @@
 <div class="modal-header">
-  <h2 class="movie-title">{{ movieDetails.title }}</h2>
+  <h2 class="movie-title" (click)="openImdbLink(movieDetails.imdbID)">
+    {{ movieDetails.title }}
+  </h2>
 
-  <div class="movie-actors">
-    <span *ngFor="let actor of movieDetails.actors; let i = index">
-      {{ actor }}<span *ngIf="i !== movieDetails.actors.length - 1">, </span>
-    </span>
+  <div class="movie-genres">
+    <span
+      *ngFor="let genre of movieDetails.genres"
+      class="badge"
+      [ngStyle]="{
+        'background-color': setGenreBgColor(genre)
+      }"
+      >{{ genre }}</span
+    >
   </div>
 </div>
 
@@ -14,6 +21,74 @@
   </div>
 
   <div class="movie-info">
-    <span class="movie-plot">{{ movieDetails.plot }}</span>
+    <div class="movie-plot info-container">
+      <div class="icon-container">
+        <fa-icon [icon]="faVideo"></fa-icon>
+      </div>
+
+      <span>{{ movieDetails.plot }}</span>
+    </div>
+
+    <div class="movie-actors info-container">
+      <div class="icon-container">
+        <fa-icon [icon]="faMasksTheater"></fa-icon>
+      </div>
+
+      <div class="actors-container">
+        <div *ngFor="let actor of movieDetails.actors; let i = index">
+          <span class="actor" (click)="selectActor(actor)">{{ actor }}</span>
+
+          <span *ngIf="i !== movieDetails.actors.length - 1">,&nbsp;</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="movie-directors info-container">
+      <div class="icon-container">
+        <fa-icon [icon]="faBullhorn"></fa-icon>
+      </div>
+
+      <div class="directors-container">
+        <span *ngFor="let director of movieDetails.director; let i = index">
+          <span>{{ director }}</span>
+
+          <span *ngIf="i !== movieDetails.director.length - 1">, </span>
+        </span>
+      </div>
+    </div>
+
+    <div class="movie-writers info-container">
+      <div class="icon-container">
+        <fa-icon [icon]="faPencil"></fa-icon>
+      </div>
+
+      <div class="writers-container">
+        <span *ngFor="let writer of movieDetails.writers; let i = index">
+          <span>{{ writer }}</span>
+
+          <span *ngIf="i !== movieDetails.writers.length - 1">, </span>
+        </span>
+      </div>
+    </div>
+
+    <div class="movie-runtime info-container">
+      <div class="icon-container">
+        <fa-icon [icon]="faClock"></fa-icon>
+      </div>
+
+      <div class="runtime-container">
+        <span>{{ movieDetails.runtime }}</span>
+      </div>
+    </div>
+
+    <div class="movie-awards info-container">
+      <div class="icon-container">
+        <fa-icon [icon]="faTrophy"></fa-icon>
+      </div>
+
+      <div class="awards-container">
+        <span>{{ movieDetails.awards }}</span>
+      </div>
+    </div>
   </div>
 </div>

@@ -1,13 +1,75 @@
+@import "/src/styles/colors";
+
 .modal-header {
   align-items: normal;
+  background-color: $night-rider;
+  color: $white;
   flex-direction: column;
+
+  .movie-title {
+    cursor: pointer;
+
+    &:hover {
+      color: #f5c518;
+      text-decoration: underline;
+    }
+  }
+
+  .movie-genres {
+    display: flex;
+    gap: 8px;
+
+    .badge {
+      cursor: pointer;
+    }
+  }
 }
 
 .modal-body {
+  background-color: $white-smoke;
   display: flex;
   gap: 16px;
+  user-select: none;
 
   .movie-info {
     width: 500px;
+
+    .info-container {
+      border-radius: 5px;
+      cursor: default;
+      padding: 4px;
+      transition: all 0.25s ease-in-out;
+
+      &:hover {
+        background-color: $grey;
+        color: $white;
+      }
+    }
+
+    .movie-plot,
+    .movie-directors,
+    .movie-writers,
+    .movie-runtime,
+    .movie-awards {
+      display: flex;
+      gap: 16px;
+    }
+
+    .movie-actors {
+      display: flex;
+      gap: 16px;
+
+      .actors-container {
+        & > div {
+          display: inline-block;
+        }
+      }
+    }
+
+    .icon-container {
+      display: flex;
+      justify-content: center;
+      min-width: 25px;
+    }
   }
 }
