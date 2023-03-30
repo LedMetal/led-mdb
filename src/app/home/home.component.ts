@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { filter } from 'rxjs';
 import { IMovie } from '../data/movies2019/schema/movie';
 import { MoviesApiService } from '../data/movies2019/service/movies-api.service';
 import { IMovieDetails } from '../data/omdb/schema/movie-details';
@@ -40,6 +41,17 @@ export class HomeComponent implements OnInit {
           .getMovie(movie)
           .subscribe((movie: IMovieDetails) => this._displayMovies.push(movie));
       });
+  }
+
+  filterByActor(actor: string): void {
+    this._displayMovies = [];
+
+    this.moviesApi.getAllMovies().subscribe((movie: IMovie) => {
+      this.omdbApi
+        .getMovie(movie)
+        .pipe(filter((movie: IMovieDetails) => movie.actors.includes(actor)))
+        .subscribe((movie: IMovieDetails) => this._displayMovies.push(movie));
+    });
   }
 
   getMonthFilter(month: string): void {

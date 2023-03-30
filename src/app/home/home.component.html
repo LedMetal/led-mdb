@@ -1,6 +1,7 @@
 <div class="home-container">
   <div class="search-container">
     <app-dropdown
+      [placeholder]="'Select month'"
       (emitValue)="getMonthFilter($event)"
       [options]="[
         'January',
@@ -23,6 +24,7 @@
     <app-movie-card
       *ngFor="let movie of displayMovies"
       [movieDetails]="movie"
+      (searchByActor)="filterByActor($event)"
     ></app-movie-card>
   </div>
 </div>

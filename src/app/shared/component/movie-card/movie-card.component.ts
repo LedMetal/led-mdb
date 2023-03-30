@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import {
   EmptyMovieDetails,
@@ -13,6 +13,7 @@ import { MovieModalComponent } from '../movie-modal/movie-modal.component';
 })
 export class MovieCardComponent {
   @Input() movieDetails: IMovieDetails = new EmptyMovieDetails();
+  @Output() searchByActor: EventEmitter<string> = new EventEmitter();
 
   constructor(private modalService: NgbModal) {}
 
@@ -21,5 +22,8 @@ export class MovieCardComponent {
       modalDialogClass: 'modal-dialog-class',
     });
     modalRef.componentInstance.movieDetails = this.movieDetails;
+    modalRef.result
+      .then((actor: string) => this.searchByActor.emit(actor))
+      .catch(() => console.log());
   }
 }
