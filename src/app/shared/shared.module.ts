@@ -8,7 +8,12 @@ import { MovieCardComponent } from './component/movie-card/movie-card.component'
 import { MovieModalComponent } from './component/movie-modal/movie-modal.component';
 
 @NgModule({
-  declarations: [TextboxComponent, DropdownComponent, MovieCardComponent, MovieModalComponent],
+  declarations: [
+    TextboxComponent,
+    DropdownComponent,
+    MovieCardComponent,
+    MovieModalComponent,
+  ],
   imports: [CommonModule, FormsModule, FontAwesomeModule],
   exports: [TextboxComponent, DropdownComponent, MovieCardComponent],
 })
