@@ -80,5 +80,43 @@
       justify-content: center;
       min-width: 25px;
     }
+
+    hr {
+      margin: 1rem auto;
+      width: 75%;
+    }
+
+    .watched-section {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 1rem;
+
+      .gender-icons {
+        align-items: center;
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+
+        .mars-icon {
+          color: $jordy-blue;
+        }
+
+        .venus-icon {
+          color: $cotton-candy;
+        }
+      }
+
+      .watched-date-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        justify-content: center;
+
+        h5 {
+          margin: 0;
+        }
+      }
+    }
   }
 }

@@ -1,10 +1,14 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import {
   faBullhorn,
+  faCalendar,
   faClock,
+  faMars,
   faMasksTheater,
   faPencil,
+  faStopwatch,
   faTrophy,
+  faVenus,
   faVideo,
 } from '@fortawesome/free-solid-svg-icons';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
@@ -23,11 +27,15 @@ export class MovieModalComponent {
   @Input() movieDetails: IMovieDetails = new EmptyMovieDetails();
   @Output() selectedActor: EventEmitter<string> = new EventEmitter();
 
+  faCalendar = faCalendar;
   faClock = faClock;
   faBullhorn = faBullhorn;
+  faMars = faMars;
   faMasksTheater = faMasksTheater;
   faPencil = faPencil;
+  faStopwatch = faStopwatch;
   faTrophy = faTrophy;
+  faVenus = faVenus;
   faVideo = faVideo;
 
   constructor(public activeModal: NgbActiveModal) {}

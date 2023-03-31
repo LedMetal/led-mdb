@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { filter } from 'rxjs';
 import { IMovie } from '../data/movies2019/schema/movie';
 import { MoviesApiService } from '../data/movies2019/service/movies-api.service';
@@ -11,8 +11,8 @@ import { IFilterInfo, Month } from '../shared/constants';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
-  selectedMonth: Month = Month.January;
+export class HomeComponent {
+  selectedMonth: Month | null = Month.January;
 
   private _displayMovies: IMovieDetails[] = [];
   get displayMovies(): IMovieDetails[] {
@@ -27,20 +27,20 @@ export class HomeComponent implements OnInit {
     private omdbApi: OmdbApiService
   ) {}
 
-  ngOnInit(): void {
-    this.setDisplayMovies();
-  }
-
   setDisplayMovies() {
     this._displayMovies = [];
 
-    this.moviesApi
-      .getMoviesByMonth(this.selectedMonth)
-      .subscribe((movie: IMovie) => {
-        this.omdbApi
-          .getMovie(movie)
-          .subscribe((movie: IMovieDetails) => this._displayMovies.push(movie));
-      });
+    if (this.selectedMonth !== null) {
+      this.moviesApi
+        .getMoviesByMonth(this.selectedMonth)
+        .subscribe((movie: IMovie) => {
+          this.omdbApi
+            .getMovie(movie)
+            .subscribe((movie: IMovieDetails) =>
+              this._displayMovies.push(movie)
+            );
+        });
+    }
   }
 
   filterDisplayMovies(filterInfo: IFilterInfo): void {
@@ -106,6 +106,9 @@ export class HomeComponent implements OnInit {
         break;
       case 'December':
         this.selectedMonth = Month[month];
+        break;
+      default:
+        this.selectedMonth = null;
         break;
     }
 

@@ -86,7 +86,7 @@
 
     <div class="movie-runtime info-container">
       <div class="icon-container">
-        <fa-icon [icon]="faClock"></fa-icon>
+        <fa-icon [icon]="faStopwatch"></fa-icon>
       </div>
 
       <div class="runtime-container">
@@ -101,6 +101,36 @@
 
       <div class="awards-container">
         <span>{{ movieDetails.awards }}</span>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="watched-section">
+      <div class="watched-by-container">
+        <h4>Watched By</h4>
+
+        <div class="gender-icons">
+          <fa-icon
+            class="mars-icon"
+            *ngIf="movieDetails.mani"
+            [icon]="faMars"
+            size="4x"
+          ></fa-icon>
+
+          <fa-icon
+            class="venus-icon"
+            *ngIf="movieDetails.nida"
+            [icon]="faVenus"
+            size="4x"
+          ></fa-icon>
+        </div>
+      </div>
+
+      <div class="watched-date-container">
+        <fa-icon [icon]="faCalendar" size="3x"></fa-icon>
+
+        <h5>{{ movieDetails.watchDate | date : "MMM dd" }}</h5>
       </div>
     </div>
   </div>
