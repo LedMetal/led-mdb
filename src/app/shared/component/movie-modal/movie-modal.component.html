@@ -115,6 +115,7 @@
             class="mars-icon"
             *ngIf="movieDetails.mani"
             [icon]="faMars"
+            (click)="setFilter('watcher', 'mani')"
             size="4x"
           ></fa-icon>
 
@@ -122,6 +123,7 @@
             class="venus-icon"
             *ngIf="movieDetails.nida"
             [icon]="faVenus"
+            (click)="setFilter('watcher', 'nida')"
             size="4x"
           ></fa-icon>
         </div>

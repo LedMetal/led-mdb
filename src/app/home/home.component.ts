@@ -60,6 +60,10 @@ export class HomeComponent {
                 return movie.writers.includes(filterInfo.filterTerm);
               case 'genres':
                 return movie.genres.includes(filterInfo.filterTerm);
+              case 'watcher':
+                return filterInfo.filterTerm === 'mani'
+                  ? movie.mani
+                  : movie.nida;
               default:
                 return false;
             }
