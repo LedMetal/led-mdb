@@ -20,6 +20,7 @@ export class MovieCardComponent {
 
   openModal() {
     const modalRef = this.modalService.open(MovieModalComponent, {
+      ariaLabelledBy: 'movie-title',
       modalDialogClass: 'modal-dialog-class',
     });
     modalRef.componentInstance.movieDetails = this.movieDetails;

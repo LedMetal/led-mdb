@@ -13,6 +13,10 @@
       color: #f5c518;
       text-decoration: underline;
     }
+
+    &:focus-within {
+      outline: 0;
+    }
   }
 
   .movie-genres {
@@ -91,18 +95,24 @@
       justify-content: space-evenly;
       margin-bottom: 1rem;
 
-      .gender-icons {
-        align-items: center;
-        display: flex;
-        gap: 32px;
-        justify-content: center;
-
-        .mars-icon {
-          color: $jordy-blue;
+      .watched-by-container {
+        .watched-by-title {
+          font-size: 1.5rem;
         }
 
-        .venus-icon {
-          color: $cotton-candy;
+        .gender-icons {
+          align-items: center;
+          display: flex;
+          gap: 32px;
+          justify-content: center;
+
+          .mars-icon {
+            color: $jordy-blue;
+          }
+
+          .venus-icon {
+            color: $cotton-candy;
+          }
         }
       }
 
@@ -113,7 +123,8 @@
         gap: 8px;
         justify-content: center;
 
-        h5 {
+        .watched-date {
+          font-size: 1.25rem;
           margin: 0;
         }
       }

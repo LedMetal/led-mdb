@@ -10,8 +10,9 @@
   <select
     class="drop-down-select"
     [ngClass]="{ 'selection-made': selectionMade }"
-    name="cars"
-    id="cars"
+    name="options"
+    id="options"
+    aria-label="Select one of the dropdown options"
     (click)="handleDropDownClick($any($event.target).value)"
     (keyup)="handleDropDownClick($any($event.target).value)"
   >

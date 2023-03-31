@@ -55,35 +55,35 @@ export class MovieModalComponent {
       case 'Horror':
         return '#3a1717';
       case 'Sci-Fi':
-        return '#f70084';
+        return '#E60078';
       case 'Action':
         return '#041e42';
       case 'Adventure':
-        return '#53c57f';
+        return '#2E854E';
       case 'Crime':
         return '#640404';
       case 'Music':
-        return '#00d2ff';
+        return '#007E99';
       case 'Biography':
         return '#cb2f66';
       case 'Mystery':
         return '#876524';
       case 'Animation':
-        return '#3a8e9d';
+        return '#36808B';
       case 'Fantasy':
-        return '#be8cff';
+        return '#9647FF';
       case 'Family':
-        return '#dbacac';
+        return '#B55959';
       case 'Documentary':
         return '#892b1a';
       case 'Musical':
-        return '#85ff00';
+        return '#408500';
       case 'Sport':
         return '#4f77a5';
       case 'Thriller':
         return '#1f3e5b';
       case 'History':
-        return '#a78686';
+        return '#946B6B';
       default:
         return '';
     }

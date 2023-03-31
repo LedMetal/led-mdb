@@ -1,5 +1,10 @@
 <div class="modal-header">
-  <h2 class="movie-title" (click)="openImdbLink(movieDetails.imdbID)">
+  <h2
+    class="movie-title"
+    id="movie-title"
+    tabindex="0"
+    (click)="openImdbLink(movieDetails.imdbID)"
+  >
     {{ movieDetails.title }}
   </h2>
 
@@ -18,7 +23,7 @@
 
 <div class="modal-body">
   <div class="movie-poster">
-    <img [src]="movieDetails.poster" />
+    <img [src]="movieDetails.poster" alt="movie poster" />
   </div>
 
   <div class="movie-info">
@@ -108,7 +113,7 @@
 
     <div class="watched-section">
       <div class="watched-by-container">
-        <h4>Watched By</h4>
+        <span class="watched-by-title">Watched By</span>
 
         <div class="gender-icons">
           <fa-icon
@@ -132,7 +137,9 @@
       <div class="watched-date-container">
         <fa-icon [icon]="faCalendar" size="3x"></fa-icon>
 
-        <h5>{{ movieDetails.watchDate | date : "MMM dd" }}</h5>
+        <span class="watched-date">{{
+          movieDetails.watchDate | date : "MMM dd"
+        }}</span>
       </div>
     </div>
   </div>
