@@ -1,4 +1,13 @@
+@import "/src/styles/colors";
+
 .home-container {
+  .home-heading {
+    align-items: center;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+  }
+
   .search-container {
     margin: auto;
     padding: 1rem;

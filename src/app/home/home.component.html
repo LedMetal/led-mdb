@@ -1,30 +1,37 @@
 <div class="home-container">
-  <div class="search-container">
-    <app-dropdown
-      [placeholder]="'Select month'"
-      (emitValue)="getMonthFilter($event)"
-      [options]="[
-        'January',
-        'February',
-        'March',
-        'April',
-        'May',
-        'June',
-        'July',
-        'August',
-        'September',
-        'October',
-        'November',
-        'December'
-      ]"
-    ></app-dropdown>
-  </div>
+  <header class="home-heading">
+    <h1 class="display-1">LedMDB</h1>
+    <p>A Glimpse into the Movies Watched in 2019</p>
+  </header>
 
-  <div class="movies-container">
-    <app-movie-card
-      *ngFor="let movie of displayMovies"
-      [movieDetails]="movie"
-      (searchByFilter)="filterDisplayMovies($event)"
-    ></app-movie-card>
-  </div>
+  <main>
+    <div class="search-container">
+      <app-dropdown
+        [placeholder]="'Select month'"
+        (emitValue)="getMonthFilter($event)"
+        [options]="[
+          'January',
+          'February',
+          'March',
+          'April',
+          'May',
+          'June',
+          'July',
+          'August',
+          'September',
+          'October',
+          'November',
+          'December'
+        ]"
+      ></app-dropdown>
+    </div>
+
+    <div class="movies-container">
+      <app-movie-card
+        *ngFor="let movie of displayMovies"
+        [movieDetails]="movie"
+        (searchByFilter)="filterDisplayMovies($event)"
+      ></app-movie-card>
+    </div>
+  </main>
 </div>
