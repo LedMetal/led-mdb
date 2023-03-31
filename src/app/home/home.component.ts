@@ -4,7 +4,7 @@ import { IMovie } from '../data/movies2019/schema/movie';
 import { MoviesApiService } from '../data/movies2019/service/movies-api.service';
 import { IMovieDetails } from '../data/omdb/schema/movie-details';
 import { OmdbApiService } from '../data/omdb/service/omdb-api.service';
-import { IFilterInfo, Month } from '../shared/constants';
+import { EmptyIFilterInfo, IFilterInfo, Month } from '../shared/constants';
 
 @Component({
   selector: 'app-home',
@@ -13,6 +13,11 @@ import { IFilterInfo, Month } from '../shared/constants';
 })
 export class HomeComponent {
   selectedMonth: Month | null = Month.January;
+
+  private _activeFilter: IFilterInfo = new EmptyIFilterInfo();
+  get activeFilter(): IFilterInfo {
+    return this._activeFilter;
+  }
 
   private _displayMovies: IMovieDetails[] = [];
   get displayMovies(): IMovieDetails[] {
@@ -27,95 +32,107 @@ export class HomeComponent {
     private omdbApi: OmdbApiService
   ) {}
 
-  setDisplayMovies() {
+  filterDisplayMovies(filterInfo: IFilterInfo): void {
     this._displayMovies = [];
+    this._activeFilter = filterInfo;
 
-    if (this.selectedMonth !== null) {
-      this.moviesApi
-        .getMoviesByMonth(this.selectedMonth)
-        .subscribe((movie: IMovie) => {
+    if (filterInfo.filterBy !== '' && filterInfo.filterTerm !== '') {
+      if (filterInfo.filterBy === 'month') {
+        this.moviesApi
+          .getMoviesByMonth(this.mapMonthStringToIndex(filterInfo.filterTerm))
+          .subscribe((movie: IMovie) => {
+            this.omdbApi
+              .getMovie(movie)
+              .subscribe((movie: IMovieDetails) =>
+                this._displayMovies.push(movie)
+              );
+          });
+      } else if (filterInfo.filterBy === 'watcher') {
+        this.moviesApi
+          .getMoviesByWatcher(filterInfo.filterTerm)
+          .subscribe((movie: IMovie) => {
+            this.omdbApi
+              .getMovie(movie)
+              .subscribe((movie: IMovieDetails) =>
+                this._displayMovies.push(movie)
+              );
+          });
+      } else {
+        this.moviesApi.getAllMovies().subscribe((movie: IMovie) => {
           this.omdbApi
             .getMovie(movie)
+            .pipe(
+              filter((movie: IMovieDetails) => {
+                switch (filterInfo.filterBy) {
+                  case 'actors':
+                    return movie.actors.includes(filterInfo.filterTerm);
+                  case 'director':
+                    return movie.director.includes(filterInfo.filterTerm);
+                  case 'writers':
+                    return movie.writers.includes(filterInfo.filterTerm);
+                  case 'genres':
+                    return movie.genres.includes(filterInfo.filterTerm);
+                  default:
+                    return false;
+                }
+              })
+            )
             .subscribe((movie: IMovieDetails) =>
               this._displayMovies.push(movie)
             );
         });
+      }
     }
   }
 
-  filterDisplayMovies(filterInfo: IFilterInfo): void {
-    this._displayMovies = [];
-
-    this.moviesApi.getAllMovies().subscribe((movie: IMovie) => {
-      this.omdbApi
-        .getMovie(movie)
-        .pipe(
-          filter((movie: IMovieDetails) => {
-            switch (filterInfo.filterBy) {
-              case 'actors':
-                return movie.actors.includes(filterInfo.filterTerm);
-              case 'director':
-                return movie.director.includes(filterInfo.filterTerm);
-              case 'writers':
-                return movie.writers.includes(filterInfo.filterTerm);
-              case 'genres':
-                return movie.genres.includes(filterInfo.filterTerm);
-              case 'watcher':
-                return filterInfo.filterTerm === 'mani'
-                  ? movie.mani
-                  : movie.nida;
-              default:
-                return false;
-            }
-          })
-        )
-        .subscribe((movie: IMovieDetails) => this._displayMovies.push(movie));
-    });
-  }
-
-  getMonthFilter(month: string): void {
+  mapMonthStringToIndex(month: string): number {
     switch (month) {
       case 'January':
-        this.selectedMonth = Month[month];
-        break;
+        return Month.January;
       case 'February':
-        this.selectedMonth = Month[month];
-        break;
+        return Month.February;
       case 'March':
-        this.selectedMonth = Month[month];
-        break;
+        return Month.March;
       case 'April':
-        this.selectedMonth = Month[month];
-        break;
+        return Month.April;
       case 'May':
-        this.selectedMonth = Month[month];
-        break;
+        return Month.May;
       case 'June':
-        this.selectedMonth = Month[month];
-        break;
+        return Month.June;
       case 'July':
-        this.selectedMonth = Month[month];
-        break;
+        return Month.July;
       case 'August':
-        this.selectedMonth = Month[month];
-        break;
+        return Month.August;
       case 'September':
-        this.selectedMonth = Month[month];
-        break;
+        return Month.September;
       case 'October':
-        this.selectedMonth = Month[month];
-        break;
+        return Month.October;
       case 'November':
-        this.selectedMonth = Month[month];
-        break;
+        return Month.November;
       case 'December':
-        this.selectedMonth = Month[month];
-        break;
+        return Month.December;
       default:
-        this.selectedMonth = null;
-        break;
+        return -1;
     }
+  }
 
-    this.setDisplayMovies();
+  setResultsTitle(): string {
+    let title = `${this._displayMovies.length} Movies `;
+
+    if (this._activeFilter.filterBy === 'month') {
+      return (title += `Watched In: "${this._activeFilter.filterTerm}"`);
+    } else if (this._activeFilter.filterBy === 'watcher') {
+      return (title += `Watched By: "${this._activeFilter.filterTerm}"`);
+    } else if (this._activeFilter.filterBy === 'actors') {
+      return (title += `Starring: "${this._activeFilter.filterTerm}"`);
+    } else if (this._activeFilter.filterBy === 'director') {
+      return (title += `Directed By: "${this._activeFilter.filterTerm}"`);
+    } else if (this._activeFilter.filterBy === 'writers') {
+      return (title += `Written By: "${this._activeFilter.filterTerm}"`);
+    } else if (this._activeFilter.filterBy === 'genres') {
+      return (title += `From the Genre: "${this._activeFilter.filterTerm}"`);
+    } else {
+      return '';
+    }
   }
 }

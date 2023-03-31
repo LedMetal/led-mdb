@@ -16,7 +16,6 @@
     (click)="handleDropDownClick($any($event.target).value)"
     (keyup)="handleDropDownClick($any($event.target).value)"
   >
-    <option value=""></option>
     <option *ngFor="let option of options" [value]="option">
       {{ option }}
     </option>

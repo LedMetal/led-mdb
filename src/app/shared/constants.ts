@@ -22,3 +22,13 @@ export interface IFilterInfo {
   filterBy: string;
   filterTerm: string;
 }
+
+export class EmptyIFilterInfo {
+  filterBy: string;
+  filterTerm: string;
+
+  constructor() {
+    this.filterBy = '';
+    this.filterTerm = '';
+  }
+}
