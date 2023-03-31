@@ -4,12 +4,34 @@
     <p>A Glimpse into the Movies Watched in 2019</p>
   </header>
 
+  <hr />
+
   <main>
+    <div class="app-description">
+      <p>
+        In 2019, my wife and I decided to make a record of every single movie we
+        watched that year. The reason for this was to collect a real dataset to
+        use when practicing creating apps like <strong>LedMDB</strong>!
+      </p>
+
+      <p>
+        To get started, use one of the filter options below to start displaying
+        the movies we watched. You can then click on a movie to display details
+        on that movie! Movie information is received via the
+        <a href="https://www.omdbapi.com/" target="_blank">OMDB API</a>.
+      </p>
+    </div>
+
+    <hr />
+
     <div class="search-container">
       <app-dropdown
         [placeholder]="'Select month'"
-        (emitValue)="getMonthFilter($event)"
+        (emitValue)="
+          filterDisplayMovies({ filterBy: 'month', filterTerm: $event })
+        "
         [options]="[
+          '',
           'January',
           'February',
           'March',
@@ -26,12 +48,18 @@
       ></app-dropdown>
     </div>
 
-    <div class="movies-container">
-      <app-movie-card
-        *ngFor="let movie of displayMovies"
-        [movieDetails]="movie"
-        (searchByFilter)="filterDisplayMovies($event)"
-      ></app-movie-card>
-    </div>
+    <ng-container
+      *ngIf="activeFilter.filterBy !== '' && activeFilter.filterTerm !== ''"
+    >
+      <div class="movies-container-title">{{ setResultsTitle() }}</div>
+
+      <div class="movies-container">
+        <app-movie-card
+          *ngFor="let movie of displayMovies"
+          [movieDetails]="movie"
+          (searchByFilter)="filterDisplayMovies($event)"
+        ></app-movie-card>
+      </div>
+    </ng-container>
   </main>
 </div>

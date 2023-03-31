@@ -1,6 +1,8 @@
 @import "/src/styles/colors";
 
 .home-container {
+  padding: 1rem;
+
   .home-heading {
     align-items: center;
     color: $white;
@@ -8,10 +10,27 @@
     flex-direction: column;
   }
 
+  hr {
+    color: $white;
+    margin: 1rem auto;
+    width: 75%;
+  }
+
+  .app-description {
+    color: $white;
+    margin: auto;
+    width: 800px;
+  }
+
   .search-container {
     margin: auto;
     padding: 1rem;
     width: 250px;
+  }
+
+  .movies-container-title {
+    color: $white;
+    text-align: center;
   }
 
   .movies-container {
