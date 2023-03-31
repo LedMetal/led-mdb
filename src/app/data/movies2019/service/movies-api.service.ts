@@ -23,6 +23,14 @@ export class MoviesApiService {
     );
   }
 
+  getMoviesByWatcher(watcher: string): Observable<IMovie> {
+    return this.getAllMovies().pipe(
+      filter((movie: IMovie) => {
+        return watcher === 'mani' ? movie.mani : movie.nida;
+      })
+    );
+  }
+
   mapJsonNMovieToIMovie(jsonMovie: JsonMovie): IMovie {
     return {
       date: new Date(`${jsonMovie.date}, 2019`),
