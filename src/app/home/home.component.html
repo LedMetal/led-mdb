@@ -62,13 +62,51 @@
     >
       <div class="movies-container-title">{{ setResultsTitle() }}</div>
 
-      <div class="movies-container">
+      <div class="movies-container" *ngIf="currentTheme !== 2">
         <app-movie-card
           *ngFor="let movie of displayMovies"
           [movieDetails]="movie"
           [theme]="currentTheme"
           (searchByFilter)="filterDisplayMovies($event)"
+          (openMovieModal)="openModal($event)"
         ></app-movie-card>
+      </div>
+
+      <div class="movies-container-table" *ngIf="currentTheme === 2">
+        <table class="table table-hover">
+          <thead class="table-dark">
+            <tr>
+              <th></th>
+              <th scope="col">Title</th>
+              <th scope="col">Watch Date</th>
+              <th scope="col">Method</th>
+              <th scope="col">
+                <fa-icon [icon]="faMars"></fa-icon>
+              </th>
+              <th scope="col">
+                <fa-icon [icon]="faVenus"></fa-icon>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let movie of displayMovies" (click)="openModal(movie)">
+              <td>
+                <img class="movie-poster" [src]="movie.poster" />
+              </td>
+              <td>
+                <div class="movie-title">{{ movie.title }}</div>
+              </td>
+              <td>{{ movie.watchDate | date : "MMM dd" }}</td>
+              <td>{{ getMethodString(movie.watchMethod) }}</td>
+              <td>
+                <fa-icon *ngIf="movie.mani" [icon]="faCircleCheck"></fa-icon>
+              </td>
+              <td>
+                <fa-icon *ngIf="movie.nida" [icon]="faCircleCheck"></fa-icon>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </ng-container>
   </main>
