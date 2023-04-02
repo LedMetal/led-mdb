@@ -14,4 +14,12 @@
   >
     large
   </div>
+
+  <div
+    class="theme-container"
+    [ngClass]="{ 'active-theme': activeTheme === 2 }"
+    (click)="handleThemeClick(2)"
+  >
+    table
+  </div>
 </div>

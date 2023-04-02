@@ -1,9 +1,17 @@
 import { Component } from '@angular/core';
+import {
+  faCircleCheck,
+  faMars,
+  faVenus,
+} from '@fortawesome/free-solid-svg-icons';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { filter } from 'rxjs';
+import { IMethod } from '../data/movies2019/schema/method';
 import { IMovie } from '../data/movies2019/schema/movie';
 import { MoviesApiService } from '../data/movies2019/service/movies-api.service';
 import { IMovieDetails } from '../data/omdb/schema/movie-details';
 import { OmdbApiService } from '../data/omdb/service/omdb-api.service';
+import { MovieModalComponent } from '../shared/component/movie-modal/movie-modal.component';
 import {
   EmptyIFilterInfo,
   IFilterInfo,
@@ -18,6 +26,9 @@ import {
 })
 export class HomeComponent {
   selectedMonth: Month | null = Month.January;
+  faMars = faMars;
+  faVenus = faVenus;
+  faCircleCheck = faCircleCheck;
 
   private _currentTheme: Theme = Theme.large;
   get currentTheme(): Theme {
@@ -39,7 +50,8 @@ export class HomeComponent {
 
   constructor(
     private moviesApi: MoviesApiService,
-    private omdbApi: OmdbApiService
+    private omdbApi: OmdbApiService,
+    private modalService: NgbModal
   ) {}
 
   filterDisplayMovies(filterInfo: IFilterInfo): void {
@@ -148,5 +160,20 @@ export class HomeComponent {
 
   changeTheme(selectedTheme: Theme): void {
     this._currentTheme = selectedTheme;
+  }
+
+  getMethodString(method: IMethod): string {
+    return IMethod[method];
+  }
+
+  openModal(movieDetails: IMovieDetails) {
+    const modalRef = this.modalService.open(MovieModalComponent, {
+      ariaLabelledBy: 'movie-title',
+      modalDialogClass: 'modal-dialog-class',
+    });
+    modalRef.componentInstance.movieDetails = movieDetails;
+    modalRef.result
+      .then((filterInfo: IFilterInfo) => this.filterDisplayMovies(filterInfo))
+      .catch(() => console.log());
   }
 }
