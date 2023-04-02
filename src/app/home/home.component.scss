@@ -22,15 +22,24 @@
     width: 800px;
   }
 
-  .search-container {
+  .filter-container {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
     margin: auto;
     padding: 1rem;
-    width: 250px;
+    width: 1050px;
+
+    > * {
+      width: 200px;
+    }
   }
 
   .movies-container-title {
     color: $white;
+    margin: auto;
     text-align: center;
+    width: 1050px;
   }
 
   .movies-container {

@@ -1,0 +1,17 @@
+<div class="theme-toggler">
+  <div
+    class="theme-container"
+    [ngClass]="{ 'active-theme': activeTheme === 0 }"
+    (click)="handleThemeClick(0)"
+  >
+    small
+  </div>
+
+  <div
+    class="theme-container"
+    [ngClass]="{ 'active-theme': activeTheme === 1 }"
+    (click)="handleThemeClick(1)"
+  >
+    large
+  </div>
+</div>

@@ -32,3 +32,9 @@ export class EmptyIFilterInfo {
     this.filterTerm = '';
   }
 }
+
+export enum Theme {
+  'small',
+  'large',
+  'table',
+}

@@ -1,5 +1,10 @@
+<div *ngIf="theme === 0" class="movie-card-small" (click)="openModal()">
+  <img class="movie-poster" [src]="movieDetails.poster" />
+</div>
+
 <div
-  class="movie-card"
+  *ngIf="theme === 1"
+  class="movie-card-large"
   [ngStyle]="{ 'background-image': 'url(' + movieDetails.poster + ')' }"
   (click)="openModal()"
 >

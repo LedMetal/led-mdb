@@ -4,7 +4,12 @@ import { IMovie } from '../data/movies2019/schema/movie';
 import { MoviesApiService } from '../data/movies2019/service/movies-api.service';
 import { IMovieDetails } from '../data/omdb/schema/movie-details';
 import { OmdbApiService } from '../data/omdb/service/omdb-api.service';
-import { EmptyIFilterInfo, IFilterInfo, Month } from '../shared/constants';
+import {
+  EmptyIFilterInfo,
+  IFilterInfo,
+  Month,
+  Theme,
+} from '../shared/constants';
 
 @Component({
   selector: 'app-home',
@@ -13,6 +18,11 @@ import { EmptyIFilterInfo, IFilterInfo, Month } from '../shared/constants';
 })
 export class HomeComponent {
   selectedMonth: Month | null = Month.January;
+
+  private _currentTheme: Theme = Theme.large;
+  get currentTheme(): Theme {
+    return this._currentTheme;
+  }
 
   private _activeFilter: IFilterInfo = new EmptyIFilterInfo();
   get activeFilter(): IFilterInfo {
@@ -134,5 +144,9 @@ export class HomeComponent {
     } else {
       return '';
     }
+  }
+
+  changeTheme(selectedTheme: Theme): void {
+    this._currentTheme = selectedTheme;
   }
 }

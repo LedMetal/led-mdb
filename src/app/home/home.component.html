@@ -24,7 +24,14 @@
 
     <hr />
 
-    <div class="search-container">
+    <div class="filter-container">
+      <div class="theme-toggler-container">
+        <app-theme-toggler
+          [activeTheme]="currentTheme"
+          (changeTheme)="changeTheme($event)"
+        ></app-theme-toggler>
+      </div>
+
       <app-dropdown
         [placeholder]="'Select month'"
         (emitValue)="
@@ -46,6 +53,8 @@
           'December'
         ]"
       ></app-dropdown>
+
+      <div class="empty-container"></div>
     </div>
 
     <ng-container
@@ -57,6 +66,7 @@
         <app-movie-card
           *ngFor="let movie of displayMovies"
           [movieDetails]="movie"
+          [theme]="currentTheme"
           (searchByFilter)="filterDisplayMovies($event)"
         ></app-movie-card>
       </div>

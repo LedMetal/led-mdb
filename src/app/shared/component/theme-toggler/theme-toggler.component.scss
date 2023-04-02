@@ -1,0 +1,18 @@
+@import "/src/styles/colors";
+
+.theme-toggler {
+  cursor: pointer;
+  display: flex;
+  user-select: none;
+
+  .theme-container {
+    border: 1px solid $grey;
+    color: $grey;
+    padding: 7px 12px;
+
+    &.active-theme {
+      background-color: $light-green;
+      color: $white;
+    }
+  }
+}

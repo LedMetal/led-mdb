@@ -1,6 +1,46 @@
 @import "/src/styles/colors";
 
-.movie-card {
+.movie-card-small {
+  background-color: black;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  filter: grayscale(1);
+  height: 100px;
+  overflow: hidden;
+  transition: all 0.25s ease-in-out;
+  width: 150px;
+
+  &:hover {
+    filter: grayscale(0);
+    height: 225px;
+
+    .slider-container {
+      display: flex;
+    }
+  }
+
+  .movie-poster {
+    height: 225px;
+    width: 150px;
+  }
+
+  .slider-container {
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    .movie-title {
+      color: $white;
+      font-size: 26px;
+      text-align: center;
+    }
+  }
+}
+
+.movie-card-large {
   background-position: center;
   background-size: 100%;
   cursor: pointer;
