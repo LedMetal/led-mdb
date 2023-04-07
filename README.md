@@ -1,27 +1,21 @@
-# LedMdb
+# LedMDB
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
+## [LIVE](https://ledmdb.abdulsadiq.com/) (Work in Progress)
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+In 2019, my wife and I decided to make a record of every single movie we watched that year. The reason for this was to collect a real dataset to use when practicing creating apps, like **LedMDB**! Take a browse around at the movies we watched. Click on one that you wish to see more information on! You can start by selecting a month in the filters section!
 
-## Code scaffolding
+## Development
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+There are two sources of data used in **LedMDB**. The first is the watched movies list and the second is the [Open Movie Database](https://www.omdbapi.com/), which is used to get movie information.
 
-## Build
+OMDB is an open movie database which provides a RESTful service to developers through their API. I chose to use this API to get detailed information on each movie, as well as the official poster image to use as well. **LedMDB** uses all these to create my own movie database for the movies watched in one full calendar year. A fun and invested means of practicing APIs, observables, and Angular best practices.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Built With
 
-## Running unit tests
+_Programming Language:_ **Angular**, **Typescript**, **SCSS**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Author
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+[Abdul Sadiq](https://github.com/LedMetal)
