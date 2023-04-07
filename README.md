@@ -12,6 +12,12 @@ There are two sources of data used in **LedMDB**. The first is the watched movie
 
 OMDB is an open movie database which provides a RESTful service to developers through their API. I chose to use this API to get detailed information on each movie, as well as the official poster image to use as well. **LedMDB** uses all these to create my own movie database for the movies watched in one full calendar year. A fun and invested means of practicing APIs, observables, and Angular best practices.
 
+Some of the fields of information you can get from OMDB's API are _actors_, _director_, _writer_, _genre_, among others. Utilizing this data, I'm able to create a movie modal with it all displayed in an aesthetic way. Click on a movie to see the modal yourself! Furthermore, you can click on an actor/director/writer/genre's name to filter all movies watched based on that selection!
+
+There are three themes to choose from for the display of movies; small, large and table. The small and large themes create movie cards that vary in size, both with their own styling. The table theme displays the list of movies in a table form. The user can still select a movie to view the movie modal.
+
+The dropdown input you see on the main page of [LedMDB](https://ledmdb.abdulsadiq.com/) is a custom component. I like the animation of the placeholder as a selection is made. I also created a custom textbox component, but have not implemented it in this app yet. Take a look at the _TextboxComponent_ for a sneak peak at it, if interested!
+
 ## Built With
 
 _Programming Language:_ **Angular**, **Typescript**, **SCSS**
