@@ -12,12 +12,11 @@ export class OmdbApiService {
   constructor(private http: HttpClient) {}
 
   public getMovie(iMovie: IMovie): Observable<IMovieDetails> {
-    const url = `${Constants.URL_PREFIX}&t=${iMovie.title}&type=movie&plot=full`;
+    const url = `${Constants.URL_PREFIX}&t=${iMovie.title}&type=movie&plot=full/`;
 
-    return this.http.get<JsonMovieDetails>(url).pipe(
-      tap((movie) => console.log('jsonmovie: ', movie)),
-      map((movie) => this.mapJsonApiMovieToIMovieDetails(movie, iMovie))
-    );
+    return this.http
+      .get<JsonMovieDetails>(url)
+      .pipe(map((movie) => this.mapJsonApiMovieToIMovieDetails(movie, iMovie)));
   }
 
   mapJsonApiMovieToIMovieDetails(
